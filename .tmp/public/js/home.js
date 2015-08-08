@@ -1,4 +1,9 @@
+$(document).ready(function() {
 
-$(document).ready(function(){
-	alert("123");
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+        // put your options and callbacks here
+    })
+
 });
