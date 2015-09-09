@@ -1,35 +1,35 @@
 $(document).ready(function() {
+	for(var i=1; i<=12; i++) {
+		$("#month").append($("<option></option>").attr("value", i).text(i.toString()));
+	}
+	$("#month").change(function() {
+		// alert($("#month option:selected").val());
+		$("#day").find("option").remove();
+		switch($("#month option:selected").val()) {
+			case "2":
+				if($("#year").val()%4==0) {
+					var dayNum=29;
+				} else {
+					var dayNum=28;
+				}
+				break;
+			case "4":
+			case "6":
+			case "9":
+			case "11":
+				var dayNum=30;
+				break;
+			default:
+				var dayNum=31;
 
-    // page is now ready, initialize the calendar...
+		}
+		for(var i=1; i<=dayNum; i++) {
+			$("#day").append($("<option></option>").attr("value", i).text(i.toString()));
+		}
+	}).change();
+	$("#year").change(function() {
 
-    $('#calendar').fullCalendar({
-    	lang: 'zh-tw'
-        // put your options and callbacks here
-    });
+	})
 });
-$(document).ready(function() {
-    $('#calendar').fullCalendar({
-    	defaultDate: '2015-08-11',
-    	businessHours: true,
-		editable: true,
-	    events: [
-	        {
-	            title  : '吳小姐',
-	            start  : '2015-08-09',
-	            constraint: 'businessHours' 
-	        },
-	        {
-	            title  : '蔡先生',
-	            start  : '2015-08-05',
-	            end    : '2015-08-07',
-	            constraint: 'businessHours'
-	        },
-	        {
-	            title  : '陳先生',
-	            start  : '2015-08-11',//T12:30:00',
-	            constraint: 'businessHours'
-	            //allDay : false // will make the time show
-	        }
-	    ]
-	});
-});
+
+
