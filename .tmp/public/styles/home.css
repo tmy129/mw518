@@ -1,0 +1,16 @@
+#body{
+	width: 90%;
+	height: 75%%;
+	background-color: #fffff0;
+}
+#date{
+	margin-top: 15%;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 750px;
+	height: 50px;
+	background-color: #00ff7f;
+}
+option{
+	font-size:150px;
+}

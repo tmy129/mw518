@@ -28,8 +28,20 @@ $(document).ready(function() {
 		}
 	}).change();
 	$("#year").change(function() {
-
-	})
+		if($("#month option:selected").val()=="2"){
+			if($("#year").val()%4==0){
+				$("#day").find("option").remove();
+				for(var i=1; i<=29; i++){
+					$("#day").append($("<option></option>").attr("value", i).text(i.toString()));
+				}
+			} else {
+				$("#day").find("option").remove();
+				for(var i=1; i<=28; i++){
+					$("#day").append($("<option></option>").attr("value", i).text(i.toString()));
+				}
+			}
+		}
+	}).change();
 });
 
 
