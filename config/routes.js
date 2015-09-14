@@ -34,7 +34,8 @@ module.exports.routes = {
 
   '/': {
     view: 'home'
-  }
+  },
+  'POST /search': "ReservationController.search"
 
   /***************************************************************************
   *                                                                          *

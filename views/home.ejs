@@ -3,7 +3,9 @@
  <head>
  	<meta charset='utf-8' />
  	<script src="/js/home.js"></script>
+ 	<script src="/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
  	<link rel="stylesheet" href="/styles/home.css">
+ 	<link rel="stylesheet" href="/bootstrap-3.3.5-dist/css/bootstrap.min.css">
  </head>
  <body id="body">
  	<div id='cover'>
@@ -12,25 +14,43 @@
  	<div id='bar'>
  		<div id='inbar'>
 	 		<div id='date'>
-	 			<select id='year'>
+	 			<select class="form-control input-lg" id='year'>
 	 				<option value="2015">2015</option>
 	 				<option value="2016">2016</option>
 	 			</select>
-	 			<select id='month'>
+	 			<select class="form-control input-lg" id='month'>
 	 			</select>
-	 			<select id='day'>
+	 			<select class="form-control input-lg" id='day'>
 	 			</select>
 	 		</div>
-	 		<div id='search'>
-	 			<button>查詢空位</button>
+	 		<div id='search' class="btn-group">
+	 			<button id='searchbtn' class="btn btn-primary btn-lg">查詢空位</button>
 	 		</div>
 	 	</div>
  	</div>
  	<div id='status'>
- 		<div id='areaA'></div>
- 		<div id='areaB'></div>
- 		<div id='areaC'></div>
- 		<div id='areaD'></div>
+ 		<table class="table table-hover">
+ 			<tr>
+ 				<td id='col1'>區域</td>
+ 				<td id='col2'>剩餘空位</td>
+ 			</tr>
+ 			<tr>
+ 				<td>A區</td>
+ 				<td id='A'>--</td>
+ 			</tr>
+ 		 	<tr>
+ 		 		<td>B區</td>
+ 		 		<td id='B'>--</td>
+ 			</tr>
+ 			<tr>
+ 				<td>C區</td>
+ 				<td id='C'>--</td>
+ 			</tr>
+ 			<tr>
+ 				<td>D區</td>
+ 				<td id='D'>--</td>
+ 			</tr>
+ 		</table>
  	</div>
  	<div id='map'>
  	</div>

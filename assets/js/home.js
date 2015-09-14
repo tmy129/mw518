@@ -42,6 +42,19 @@ $(document).ready(function() {
 			}
 		}
 	}).change();
+	$("#searchbtn").click(function(){
+		var year = $("#year").val();
+		var month = $("#month").val();
+		var day = $("#day").val();
+		$.post("/search", {year: year, month: month, day:day}, function(res){
+			$("#A").html(res.lA);
+			$("#B").html(res.lB);
+			$("#C").html(res.lC);
+			$("#D").html(res.lD);
+			$("#status").css("display","block");
+		});
+
+	})
 });
 
 
