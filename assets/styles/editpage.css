@@ -1,0 +1,52 @@
+#body{
+	margin: 5%;
+}
+#user{
+	width: 40%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+#year{
+	width: 25%;
+	display: inline-block;
+}
+#month{
+	width: 25%;
+	display: inline-block;
+}
+#day{
+	width: 25%;
+	display: inline-block;
+}
+#order_date{
+	width: 50%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+#area{
+	width: 60%;
+	margin-top: 1%;
+}
+#area_a{
+	width: 24%;
+	display: inline-block;
+}
+#area_b{
+	width: 24%;
+	margin-left: 1%;
+	display: inline-block;
+}
+#area_c{
+	width: 24%;
+	margin-left: 1%;
+	display: inline-block;
+}
+#area_d{
+	width: 24%;
+	margin-left: 1%;
+	display: inline-block;
+}
+#send{
+	margin-top: 5%;
+	text-align: center;
+}

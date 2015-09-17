@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ 	<meta charset='utf-8' />
+ 	<script src="/js/editpage.js"></script>
+ 	<script src="/js/home.js"></script>
+ 	<script src="/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+ 	<link rel="stylesheet" href="/styles/editpage.css">
+ 	<link rel="stylesheet" href="/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+ </head>
+ <body id="body">
+ 	<h1>新增訂單</h1>
+ 	<div id="user" class="input-group input-group-lg">
+ 		<span class="input-group-addon">訂購人資訊：</span>
+ 		<input type="text" class="form-control" id="user_info" placeholder="訂購人">
+ 	</div>
+ 	<h3>預定時間</h3>
+ 	<div id="order_date">
+ 		<select class="form-control input-lg" id='year'>
+	 		<option value="2015">2015</option>
+	 		<option value="2016">2016</option>
+	 	</select>
+	 	<select class="form-control input-lg" id='month'>
+	 	</select>
+	 	<select class="form-control input-lg" id='day'>
+	 	</select>
+	</div>
+	<h3>預定區域</h3>
+	<div id="area" class="input-group input-group-lg">
+	 	<input type="text" class="form-control" id="area_a" placeholder="A區">
+	 	<input type="text" class="form-control" id="area_b" placeholder="B區">
+	 	<input type="text" class="form-control" id="area_c" placeholder="C區">
+	 	<input type="text" class="form-control" id="area_d" placeholder="D區">
+	<div id='send' class="btn-group">
+	 	<button id='sendbtn' class="btn btn-primary btn-lg">確定新增</button>
+	</div>
+ </body>
+</html>

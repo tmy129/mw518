@@ -46,15 +46,19 @@ $(document).ready(function() {
 		var year = $("#year").val();
 		var month = $("#month").val();
 		var day = $("#day").val();
-		$.post("/search", {year: year, month: month, day:day}, function(res){
-			$("#A").html(res.lA);
-			$("#B").html(res.lB);
-			$("#C").html(res.lC);
-			$("#D").html(res.lD);
-			$("#status").css("display","block");
+		$.post("/search", {year: year, month: month, day: day}, function(res){
+			if(res.err){
+				alert("資料庫發生錯誤，請稍候再試！");
+			}
+			else{
+				$("#A").html(res.lA);
+				$("#B").html(res.lB);
+				$("#C").html(res.lC);
+				$("#D").html(res.lD);
+				$("#status").css("display","block");
+			}
 		});
-
-	})
+	});
 });
 
 
