@@ -21,4 +21,7 @@ $(document).ready(function() {
 			}
 		});
 	});
+	$("#mod").click(function(){
+		window.location.assign("/modify");
+	});
 });

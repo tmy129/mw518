@@ -83,7 +83,9 @@ module.exports = {
 				}
 			}
 		});
-
+	},
+	o_search: function(res,req){
+		
 	}
 };
 
