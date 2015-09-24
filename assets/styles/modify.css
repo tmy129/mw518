@@ -7,12 +7,13 @@
 }
 #search_bar{
 	width: 95%;
-	height: 46px;
 	margin-bottom: 3%;
+	vertical-align: middle;
 }
 #date{
 	width: 50%;
 	display: inline-block;
+	vertical-align: middle;
 }
 #year{
 	width: 30%;
@@ -29,6 +30,7 @@
 #user{
 	width: 30%;
 	display: inline-block;
+	vertical-align: middle;
 }
 #text{
 	width: 40%;
