@@ -43,7 +43,7 @@ module.exports.routes = {
   },
   'POST /search': "ReservationController.search",
   'POST /editSend': "ReservationController.edit",
-  'POST /order_search: ReservationController.o_search'
+  'POST /order_search': "ReservationController.o_search"
 
   /***************************************************************************
   *                                                                          *

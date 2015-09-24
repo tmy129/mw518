@@ -61,7 +61,7 @@ module.exports = {
 							res.send(500,{err: "資料庫發生錯誤"});
 						}
 						else{
-							res.send({editOK:result})
+							res.send({editOK:result});
 						}
 					});
 				}
@@ -79,13 +79,21 @@ module.exports = {
 					if(lD<nD){
 						error+="D區位置不足\n";
 					}
-					res.send({editFail:error})
+					res.send({editFail:error});
 				}
 			}
 		});
 	},
-	o_search: function(res,req){
-		
+	o_search: function(req,res){
+		Reservation.find({}).exec(function(err,result){
+			if(err){
+				console.log(err);
+				res.send(500,{err:"資料庫發生錯誤"});
+			}
+			else{
+				res.send(result);
+			}
+		});
 	}
 };
 
