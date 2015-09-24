@@ -35,7 +35,15 @@ module.exports.routes = {
   '/': {
     view: 'home'
   },
-  'POST /search': "ReservationController.search"
+  '/edit': {
+    view: 'editpage'
+  },
+  '/modify':{
+    view: 'modify'
+  },
+  'POST /search': "ReservationController.search",
+  'POST /editSend': "ReservationController.edit",
+  'POST /order_search': "ReservationController.o_search"
 
   /***************************************************************************
   *                                                                          *

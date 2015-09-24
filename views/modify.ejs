@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<script src="/js/modify.js"></script>
+	<script src="/js/home.js"></script>
+	<script src="/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="/styles/modify.css">
+	<link rel="stylesheet" href="/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+</head>
+<ul id="nav" class="nav nav-tabs">
+	<li role="presentation" id="add"><a href"#">新增訂單</a></li>
+	<li role="presentation" class="active" id="mod"><a href="#">修改/查詢訂單</a></li>
+</ul>
+<body id="body">
+	<div id="search_bar">
+		<div id='date'>
+	 		<select class="form-control input-lg" id='year'>
+	 			<option value="2015">2015</option>
+	 			<option value="2016">2016</option>
+	 		</select>
+	 		<select class="form-control input-lg" id='month'>
+	 		</select>
+	 		<select class="form-control input-lg" id='day'>
+	 		</select>
+	 	</div>
+	 	<div id="user" class="input-group input-group-lg">
+ 			<span id="text" class="input-group-addon">訂購人搜尋：</span>
+ 			<input id="user_info" type="text" class="form-control" placeholder="訂購人">
+ 		</div>
+ 		<div id='send_search' class="btn-group">
+	 		<button id='sendbtn' class="btn btn-primary btn-lg">搜尋</button>
+		</div>
+ 	</div>
+	<table id="result" class="table table-hover">
+		<tr>
+			<td id='col1'>訂購人</td>
+			<td id='col2'>時間</td>
+			<td id='col3'>區域</td>
+			<td id='col4'>數量</td>
+			<td id='col5'></td>
+		</tr>
+	</table>
+</body>
+</html>

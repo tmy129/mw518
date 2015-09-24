@@ -1,0 +1,48 @@
+#nav{
+	font-size: 30px;
+	margin-bottom: 2%;
+}
+#body{
+	margin: 5%;
+}
+#search_bar{
+	width: 95%;
+	height: 46px;
+	margin-bottom: 3%;
+}
+#date{
+	width: 50%;
+	display: inline-block;
+}
+#year{
+	width: 30%;
+	display: inline-block;
+}
+#month{
+	width: 30%;
+	display: inline-block;
+}
+#day{
+	width: 30%;
+	display: inline-block;
+}
+#user{
+	width: 30%;
+	display: inline-block;
+}
+#text{
+	width: 40%;
+	display: inline-block;
+	float: left;
+}
+#user_info{
+	width: 60%;
+	display: inline-block;
+	float: right;
+}
+#send_search{
+	float: right;
+}
+#result{
+	margin-top: 3%;
+}
